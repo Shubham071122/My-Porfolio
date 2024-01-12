@@ -851,6 +851,9 @@ footer{
     font-size: 17px;
 
 }
+.line a{
+    color: var(--bgOrange);
+}
 .relative{
     position: relative;
 }
