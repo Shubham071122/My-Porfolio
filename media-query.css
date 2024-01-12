@@ -147,8 +147,9 @@
         margin-bottom: -1rem;
     }
     .user-image img {
-        height: 205px;
-        border-radius: 50%;
+        /* height: 210px; */
+        /* border-radius: 50%; */
+        object-fit:fill;
     }
     .icon-plus{
         display: none;
@@ -255,12 +256,12 @@
         font-weight: bold;
     }
     .hero-section-sub-heading {
-        font-size: 28px;
+        font-size: 25px;
         line-height: 30px;
     }
     .role {
         color: #1d1db1;
-        font-weight: 900;
+        font-weight: 800;
     }
     .hero-section-description {
         width: 100%;
