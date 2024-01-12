@@ -235,13 +235,13 @@
 
 @media screen and (max-width:479px) {
     .logo{
-        width: 30px;
+        width: 32px;
     }
     .logo-text{
-        font-size: 18px;
+        font-size: 19px;
     }
     .navbar {
-        padding: 8px 0;
+        padding: 9px 0;
     }
     .nav-toggle{
         font-size: 18px;
@@ -285,6 +285,10 @@
         /* width: 400px; */
         width: 100%;
     
+    }
+
+    .project-content{
+        margin-top: -2.5rem;
     }
 
     .skill-heading{
