@@ -119,9 +119,9 @@ a {
 }
 
 .hero-section {
-     background: rgb(231,231,231);
+    background: rgb(231,231,231);
      
-}
+    }
 .hero-background{
     background-image: url(./images/userAsset/circlegif1.gif);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -168,6 +168,8 @@ a {
     margin-top: 1rem;
     width: 80%;
     font-weight: 500;
+    color: black;
+    line-height: 20px;
 }
 
 .btn {
@@ -615,7 +617,11 @@ a {
 }
   
 .skill-subHeading p{
-    margin:15px 0;
+    margin:5px 0 0 0;
+}
+.skill-subHeading p span{
+    color: var(--bgOrange);
+    font-weight: bold;
 }
 
 .skill-container-right{
