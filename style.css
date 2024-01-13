@@ -118,6 +118,12 @@ a {
 
 .hero-section {
      background: rgb(231,231,231);
+     
+}
+.hero-background{
+    background-image: url(./images/userAsset/circlegif1.gif);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* opacity: 0.5; */
 }
 
 .faded-text {
@@ -137,6 +143,7 @@ a {
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    
 }
 
 .hero-section-heading {
@@ -554,7 +561,7 @@ a {
 }
 
 #project1{
-    background-image: url(./images/projects/Project1.png);
+    background-image: url(./images/projects/razorpay.png);
 }
 #project2{
     margin-left: 120px;
