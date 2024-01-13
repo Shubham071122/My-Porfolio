@@ -324,8 +324,12 @@
                 <h3 class="contactus-subHeading">Questions, thoughts, or just want to say hello?</h3>
 
                 <div class="contactus-form-container">
-                    <form class="form" action="">
+                    <form class="form" method="POST">
+
                         <div class="formfield-container">
+
+                            <input type="hidden" name="access_key" value="8d2cffb4-d36e-4844-87a5-1d6be23e5c4a">
+                            <input type="hidden" name="subject" value="new submission in contact" />
 
                             <input class="formfield" type="text" name="name" id="" placeholder="Enter your name" />
 
@@ -338,13 +342,14 @@
                                 placeholder="Enter your message"></textarea>
 
                         </div>
+                        <div class="h-captcha" data-captcha="true"></div>
 
                         <div>
                             <button type="submit" class="btn" id="submit-btn">
                                 Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
                             </button>
                         </div>
-
+                        <div id="form-result" ></div>
                     </form>
                 </div>
             </div>
@@ -373,17 +378,19 @@
 
                     <div class="icon-wrapper">
                         <a href="https://www.linkedin.com/in/shubham-kumar-2103a6221/"><i
-                        class="fa-brands fa-linkedin icon"></i>
+                                class="fa-brands fa-linkedin icon"></i>
                         </a>
-                        <a href="https://github.com/Shubham071122" target="_blank"><i class="fa-brands fa-github icon"></i>
+                        <a href="https://github.com/Shubham071122" target="_blank"><i
+                                class="fa-brands fa-github icon"></i>
                         </a>
-                        <a href="https://twitter.com/ShubhamRawat_7" target="_blank"><i class="fa-brands fa-twitter icon"></i>
+                        <a href="https://twitter.com/ShubhamRawat_7" target="_blank"><i
+                                class="fa-brands fa-twitter icon"></i>
                         </a>
                         <a href="https://instagram.com/shubham_kumar_.07" target="_blank">
-                        <i class="fa-brands fa-instagram icon"></i>
+                            <i class="fa-brands fa-instagram icon"></i>
                         </a>
                         <a href="mailto:shubhamkumar7112002@gmail.com" target="_blank">
-                        <i class="fa-regular fa-envelope icon"></i></a>
+                            <i class="fa-regular fa-envelope icon"></i></a>
                     </div>
 
                 </div>
@@ -396,7 +403,19 @@
 
     </div>
 
+    <!-- <div class="success">
+        <div class="cross"><i class="fa-sharp fa-solid fa-xmark" style="color: #2e2e2e;"></i></div>
+        <img src="./images/userAsset/check.png" alt="">
+        <div class="success-text">
+            <h2>Message send successfully!</h2>
+            <p>Thank you! The message has been send successfully. <br>We will reply to you soon!</p>
+             <a href="#home">Go back</a>
+        </div> -->
+
+
     <script src="script.js"></script>
+    <!--This is for hCaptcha-->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
     <script>

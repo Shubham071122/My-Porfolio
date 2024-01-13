@@ -18,6 +18,8 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
+#wrapper.active{
+}
 
 /* *************NAVBAR **************/
 .container{
@@ -867,5 +869,75 @@ footer{
 }
 
 
+/*
+.success{
+    width: 40%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(177, 179, 178, 0.8);
+    padding: 2rem;
+    font-size: 25px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    backdrop-filter: blur(3px);
+    /* display: flex; *//*
+}
+.success.active{
+    display: flex;
+}
+.success img{
+    /* width: 200px; */
+   /* width: 20%;
+}
+.cross{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+}
+.success h2{
+    text-align: center;
+    font-size: 30px;
+    color: green;
+    margin: 13px 0;
+}
+.success p{
+    font-size: 19px;
+    text-align: center;
+    color:#343d68;
+}
+.success a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-left: 50%;
+}
+*/
 
+#form-result{
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+}
+.notice--success{
+    border: 2px solid green;
+    background: rgb(152, 228, 152);
+}
+.notice--danger{
+    border: 2px solid red;
+    background: rgb(220, 147, 147);
+}
+.notice--warning{
+    border: 2px solid  yellow;
+    background: rgb(234, 234, 155);
+}
 
