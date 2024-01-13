@@ -22,7 +22,7 @@ navToggle.addEventListener("click", () => {
 
 const form = document.querySelector('.form');
 const result = document.querySelector('#form-result');
-const setCaptcha = document.querySelector('.h-captcha');
+
 
 //on submit, POST to web3Forms and get response
 form.addEventListener('submit', function (e) {
@@ -64,7 +64,7 @@ form.addEventListener('submit', function (e) {
       //make response dissapear after 3 seconds if you wish
       setTimeout(() => {
         result.style.display = "none";
-        location.reload();
+        // location.reload();
       }, 3000);
     });
 });
