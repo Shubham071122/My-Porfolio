@@ -1,5 +1,4 @@
 
-
 const navToggle = document.querySelector('.nav-toggle');
 const navItem = document.querySelector(".nav-items")
 
@@ -14,17 +13,6 @@ navToggle.addEventListener("click", () => {
   }
 
 })
-
-// //** Handeling scroll event */
-// function closeToggle() {
-//   if (navItem.classList.contains('active')) {
-//     navItem.style.display = "none";
-//   }
-// }
-// window.addEventListener('scroll', function () {
-//   console.log("scroll hua")
-//   closeToggle();
-// }, false)
 
 
 //**Handle click event */
@@ -118,3 +106,39 @@ function captch_expired() {
   allowSubmit = false;
 }
 
+
+//***  Function to highlight the active section based on scroll */position
+const sections = document.querySelectorAll('section');
+const navItems = document.querySelectorAll('.nav-items div a');
+function highlightActiveSection() {
+
+  sections.forEach((section, index) => {
+    const rect = section.getBoundingClientRect();
+
+    if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+      // This section is in the middle of the window
+      navItems.forEach(item => item.classList.remove('active'));
+      navItems[index].classList.add('active');
+    }
+  });
+}
+
+// Function to highlight the clicked navigation link
+function highlightClickedLink(event) {
+  const clickedLink = event.target;
+  navItems.forEach(item => item.classList.remove('active'));
+  clickedLink.classList.add('active');
+}
+
+// Initial call to set the initial state
+highlightActiveSection();
+
+// Event listener for scroll to update the active section
+window.addEventListener('scroll', highlightActiveSection);
+
+// Event listener for click to highlight the clicked link
+document.getElementById('navbar-item').addEventListener('click', (event) => {
+  if (event.target.tagName === 'A') {
+    highlightClickedLink(event);
+  }
+});

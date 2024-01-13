@@ -85,6 +85,9 @@
 .nav-items div a {
     color: black;
 }
+.nav-items div a.active{
+    font-weight: bold;
+}
 
 a {
     text-decoration: none;
@@ -631,6 +634,7 @@ a {
     position: relative;
     gap: 2rem;
     justify-content: center;
+    margin-top: 10rem;
 }
 
 .skill-fade-text{
@@ -645,7 +649,7 @@ a {
 }
 
 .skills-logo{
-    width: 90px;
+    width: 100px;
     transition: all 0.5s;
     z-index: 1;
 }
