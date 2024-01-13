@@ -760,11 +760,12 @@ a {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 70%;
+    width: 50%;
     margin: 2rem 5rem;
     background-color: #0000003f;
     padding: 2rem;
     border-radius: 7px;
+    padding-bottom: 10px;
 }
 
 .formfiled-container{
@@ -924,20 +925,25 @@ footer{
 
 #form-result{
     width: 100%;
-    padding: 15px 10px;
     border-radius: 5px;
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 .notice--success{
     border: 2px solid green;
     background: rgb(152, 228, 152);
+    padding: 15px 10px;
+    margin-bottom:1rem ;
 }
 .notice--danger{
     border: 2px solid red;
     background: rgb(220, 147, 147);
+    padding: 15px 10px;
+    margin-bottom:1rem ;
 }
 .notice--warning{
     border: 2px solid  yellow;
     background: rgb(234, 234, 155);
+    padding: 15px 10px;
+    margin-bottom:1rem ;
 }
 
