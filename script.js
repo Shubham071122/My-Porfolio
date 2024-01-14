@@ -134,7 +134,7 @@ function highlightClickedLink(event) {
 highlightActiveSection();
 
 // Event listener for scroll to update the active section
-window.addEventListener('scroll', highlightActiveSection);
+document.body.addEventListener('scroll', highlightActiveSection);
 
 // Event listener for click to highlight the clicked link
 document.getElementById('navbar-item').addEventListener('click', (event) => {
@@ -142,3 +142,19 @@ document.getElementById('navbar-item').addEventListener('click', (event) => {
     highlightClickedLink(event);
   }
 });
+
+
+
+//***  Function to create the mailto link dynamically*/
+function createMailtoLink() {
+  var emailAddress = "shubhamkumar7112002@gmail.com";
+  var subject = "Inquiry"; // You can customize the subject
+  var body = "Hello,"; // You can customize the body
+
+  var mailtoLink = "mailto:" + encodeURIComponent(emailAddress) +
+                   "?subject=" + encodeURIComponent(subject) +
+                   "&body=" + encodeURIComponent(body);
+
+  document.getElementById("contactLink").setAttribute("href", mailtoLink);
+  document.getElementById("contactLink2").setAttribute("href", mailtoLink);
+}
