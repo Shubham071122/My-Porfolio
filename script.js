@@ -57,6 +57,7 @@ form.addEventListener('submit', function (e) {
   const object = Object.fromEntries(formData);
   const json = JSON.stringify(object);
   result.innerHTML = "Please wait..."
+  result.classList.add('margin-bot');
   //fetch result
   fetch('https://api.web3forms.com/submit', {
     method: 'POST',
@@ -107,7 +108,7 @@ function captch_expired() {
 }
 
 
-//***  Function to highlight the active section based on scroll */position
+//***  Function to highlight the active section based on scroll position*/
 const sections = document.querySelectorAll('section');
 const navItems = document.querySelectorAll('.nav-items div a');
 function highlightActiveSection() {

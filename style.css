@@ -947,6 +947,9 @@ footer{
     border-radius: 5px;
     transition: 0.3s ease-in-out;
 }
+.margin-bot{
+    margin-bottom:1.5rem;
+}
 .notice--success{
     border: 2px solid green;
     background: rgb(152, 228, 152);
