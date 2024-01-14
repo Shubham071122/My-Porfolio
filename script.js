@@ -159,3 +159,22 @@ function createMailtoLink() {
   document.getElementById("contactLink").setAttribute("href", mailtoLink);
   document.getElementById("contactLink2").setAttribute("href", mailtoLink);
 }
+
+//*** Adding download link for cv */
+document.getElementById('downloadButton').addEventListener('click', function() {
+  // Create an anchor element
+  var downloadLink = document.createElement('a');
+  
+  // Replace the placeholder with the actual path to your PDF
+  downloadLink.href = 'CVShubhamKumar.pdf';
+  
+  // Specify the filename for the downloaded file
+  downloadLink.download = 'CV Shubham Kumar.pdf';  // Replace with the actual filename
+  
+  // Append the link to the document and trigger the click event
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  
+  // Remove the link from the document
+  document.body.removeChild(downloadLink);
+});
