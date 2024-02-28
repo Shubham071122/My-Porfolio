@@ -169,7 +169,7 @@ document.getElementById('downloadButton').addEventListener('click', function() {
   downloadLink.href = 'CVShubhamKumar.pdf';
   
   // Specify the filename for the downloaded file
-  downloadLink.download = 'CV Shubham Kumar.pdf';  // Replace with the actual filename
+  downloadLink.download = 'Shubham Kumar.pdf';  // Replace with the actual filename
   
   // Append the link to the document and trigger the click event
   document.body.appendChild(downloadLink);
