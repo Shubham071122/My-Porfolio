@@ -166,10 +166,10 @@ document.getElementById('downloadButton').addEventListener('click', function() {
   var downloadLink = document.createElement('a');
   
   // Replace the placeholder with the actual path to your PDF
-  downloadLink.href = 'CVShubhamKumar.pdf';
+  downloadLink.href = 'Shubham Kumar.pdf';
   
   // Specify the filename for the downloaded file
-  downloadLink.download = 'Shubham Kumar.pdf';  // Replace with the actual filename
+  downloadLink.download = 'CV Shubham Kumar.pdf';  // Replace with the actual filename
   
   // Append the link to the document and trigger the click event
   document.body.appendChild(downloadLink);
