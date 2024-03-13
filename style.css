@@ -768,6 +768,7 @@ a {
 }
 
 .contactus-form-container{
+    background-color: rgb(231,231,231);
     margin-top: 25px;
     display: flex;
     align-items: center;
